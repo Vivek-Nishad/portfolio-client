@@ -1,0 +1,56 @@
+.works {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f2f3f7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Philosopher", sans-serif;
+  font-size: 20px;
+
+  padding: 1.5rem 0;
+}
+
+.worksContainer {
+  width: 90%;
+  max-width: 1100px;
+
+  text-align: center;
+}
+
+.worksHead {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.worksHead > h1 {
+  margin-bottom: 1.2rem;
+  font-size: 3.2em;
+}
+
+.worksHead > h3 {
+  margin: 0rem 1rem;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.worksHead > p {
+  font-size: 1.5em;
+  position: relative;
+  padding-bottom: 3%;
+}
+
+.worksHead > p::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  background: rgb(184, 184, 184);
+}

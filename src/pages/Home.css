@@ -1,0 +1,145 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(130deg, rgb(7, 0, 45) 10%, rgb(225, 0, 255) 120%);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Philosopher", sans-serif;
+  font-size: 20px;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 80vw;
+
+  padding: 2rem;
+}
+
+.homeContent {
+  width: 100%;
+}
+
+.TextNBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.homeContent h3 {
+  margin: 0rem 1rem;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.homeContent h1 {
+  margin: 1rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 3.2em;
+  flex: 4;
+}
+
+.homeLinks {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homeLinks a {
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  transition: all 0.4s ease;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2rem;
+}
+
+.homeLinks a:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .homeContainer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .homeContainer {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .homeContainer {
+    font-size: 16px;
+  }
+  .TextNBtn {
+    flex-direction: column;
+  }
+  .homeLinks a {
+    display: inline;
+  }
+}
+@media (max-width: 600px) {
+  .homeContainer {
+    font-size: 14px;
+  }
+  .homeLinks a {
+    display: block;
+  }
+}
+@media (max-width: 300px) {
+  .homeContainer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .homeLinks {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .homeLinks {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.scrollBtn a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0px;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 0.8em;
+}
+
+.downArrow {
+  line-height: 9px;
+  padding: 5px;
+}
